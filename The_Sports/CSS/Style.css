@@ -1,0 +1,697 @@
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body {
+    background-color: #F1F6FF;
+}
+
+@font-face {
+    font-family:"Sims";
+    font-style: normal;
+    src: url("../Fonts/Loucos Lyne - thesimssansbold.otf");
+}
+
+/*Empieza el menu*/
+
+
+
+#Barramenu{
+    width: 100%;
+    min-height: 40px;
+    height: 7.5vw;
+    overflow: hidden;
+
+
+    animation-iteration-count: infinite;
+    animation-name: color;
+    animation-duration: 20s;
+
+
+}
+
+@keyframes color {
+    0% { background-color: #18B945; }
+    7.6% { background-color: #9FDE2B; }
+    15.3% { background-color: #F2CA2C; }
+    22.9% { background-color: #E68512;  }
+    30.5% { background-color: #EE5D3E;}
+    38.1% { background-color: #C61529;}
+    45.7% { background-color: #FC56A8; }
+    53.3% { background-color: #BD37B0; }
+    60.9% { background-color: #836DD2; }
+    68.5% { background-color: #7033F0; }
+    76.1% { background-color: #233EA9; }
+    83.7% { background-color: #19C7D0; }
+    91.3% { background-color: #448BCB; }
+    100% { background-color: #18B945; }
+
+}
+
+#ContenedorMenu {
+    width: 90vw;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#LogoMenu{
+    width: auto;
+    min-height: 30px;
+    height: 5vw;
+    max-height: 80px;
+    float: left;
+    margin: 1vw;
+    
+}
+
+#Menu{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    list-style-type: none;
+    float: left;
+
+}
+
+
+.elemenu{
+    width: auto;
+    height: 100%;
+    text-align: center;
+    line-height: 7.5vw;
+    float: left;
+    padding-left: 2vw;
+
+}
+
+.elemenu a {
+    font-family: Sims;
+    font-size: calc(0.5rem + 1vw );
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+}
+
+.elemenu a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2vw;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.25s ease-out;
+}
+
+
+.elemenu a:hover::before {
+  width: 100%;
+}
+
+#Menuhamburguesa{
+    width: 50%;
+    display: none;
+
+}
+
+#Botonhamburguesa{
+display: none;
+}
+
+/*Acaba el menu*/
+
+/*Empieza el hero*/
+
+#hero {
+    width: 100%;
+    height: 42.45vw;
+    background-image: url("../Media/Header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*Acaba el hero*/
+
+/*Empieza el anuncio*/
+
+#contenedoranuncio {
+    width: 100%;
+    height: 4.5vw;
+    min-height: 20px;
+    margin-bottom: 3vw;
+
+    background-color: #DAEFFB;
+    box-shadow: 1px 9px 28px rgba(89, 110, 123, 0.36) inset; 
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+#Anuncio {
+    height: auto;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: -1200px;
+    transform: translate(0, -50%);
+    z-index: 1;
+
+    animation-name: MovimientoTexto;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+}
+
+#anunciotexto {
+    font-family: Sims;
+    font-size: calc(0.5rem + 1vw );
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(89, 110, 123, 0.36);
+
+}
+
+@keyframes MovimientoTexto {
+    0%{ top: 50%;
+        left: -1200px;
+        transform: translate(0, -50%)}
+
+    50%{top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)}
+
+    100% {top: 50%;
+          left: 1200px;
+          transform: translate(0, -50%)}
+
+}
+
+/*Acaba el anuncio*/
+
+/*Empieza la introduccion*/
+
+#introduccion {
+    width: 60vw ;
+    height: auto;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3vw;
+
+}
+
+.introducciontexto {
+    font-family: Sims;
+    font-size: calc(0.5rem + 1vw );
+    color: #98D8FF;
+    text-align: center;
+}
+
+#contenedorrondas {
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 2vw;
+}
+
+.textorondas {
+    font-family: Sims;
+    font-size: calc(0.5rem + 1vw );
+    color: #fff;
+    text-align: center;
+    line-height: 7vw;
+}
+
+#ronda1 {
+    width: 100%;
+    height: 7vw;
+    background-image: url("../Media/Botones/Boton_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+
+
+#ronda1:hover {
+    background-image: url("../Media/Botones/Boton_1.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+#ronda2 {
+    width: 100%;
+    height: 7vw;
+    background-image: url("../Media/Botones/Boton_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+#ronda2:hover {
+    background-image: url("../Media/Botones/Boton_2.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#ronda3 {
+    width: 100%;
+    height: 7vw;
+    background-image: url("../Media/Botones/Boton_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+#ronda3:hover {
+    background-image: url("../Media/Botones/Boton_3.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+/*Acaba la introduccion*/
+
+/*Empieza la seccion nuestros simmers*/
+
+#seccsimmers {
+    width: 85vw;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1vw;
+
+    padding-bottom: 2vw;
+}
+
+.TituloGrande {
+    font-family: Sims;
+    font-size: calc(2rem + 2vw );
+    text-align: center;
+    color: #70C0F1; 
+}
+
+#contenedorsimmers {
+    width: 100%;
+    height: auto;
+    padding-top: 2vw;
+
+    overflow: hidden;
+}
+
+.simmers {
+    width: 23.8%;
+    height: 47,6%;
+    margin: 0.5vw;
+
+    overflow: hidden;
+    float: left;
+
+    border-radius: 3vw;
+    position: relative;
+}
+
+
+.Titulosimmer {
+    font-family: Sims;
+    font-size: calc(0.8rem + 1vw );
+    color: #fff;
+    text-shadow: 2px 0 #70C0F1, -2px 0 #70C0F1, 0 2px #70C0F1, 0 -2px #70C0F1,
+               1px 1px #70C0F1, -1px -1px #70C0F1, 1px -1px #70C0F1, -1px 1px #70C0F1;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    transition: 0.4s;
+
+}
+
+.simmers:hover .Titulosimmer {
+
+    font-family: Sims;
+    font-size: calc(0.8rem + 1vw );
+    color: #fff;
+    text-shadow: 2px 0 #70C0F1, -2px 0 #70C0F1, 0 2px #70C0F1, 0 -2px #70C0F1,
+               1px 1px #70C0F1, -1px -1px #70C0F1, 1px -1px #70C0F1, -1px 1px #70C0F1;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.Subtitulosimmer {
+    font-family: Sims;
+    font-size: calc(0.5rem + 0.8vw );
+    text-align: center;
+    color: #70C0F1;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+
+    position: absolute;
+    z-index: 3;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    transition: 0.4s;
+
+}
+
+.simmers:hover .Subtitulosimmer {
+
+    font-family: Sims;
+    font-size: calc(0.5rem + 0.8vw );
+    text-align: center;
+    color: #70C0F1;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+
+    position: absolute;
+    z-index: 3;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.Degradadoblanco {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    bottom: -10%;
+    z-index: 1;
+    background: -webkit-linear-gradient( top, transparent 30%, white 95%);
+
+    transition: 0.5s;
+}
+
+.simmers:hover .Degradadoblanco {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0%;
+    z-index: 1;
+    background: -webkit-linear-gradient( top, transparent 30%, white 95%);
+}
+
+.Fotosimmers {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/*Acaba la seccion nuestros simmers*/
+
+/*Empieza el footer*/
+
+#Footer{
+    width: 100%;
+    height: auto;
+    background-color: #70C0F1;
+
+    padding-bottom: 2vw;
+}
+
+#ContenedorRRSS {
+    width: 50%;
+    height: auto;
+    text-align: center;
+
+    padding-top: 2vw ;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.LogosRRSS {
+    height: 5vw;
+}
+
+#Contenedorconfig {
+    width: 80%;
+    height: 100px;
+
+    padding-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vw;
+
+    text-align: center;
+
+}
+
+.Textolinks {
+    
+    font-family: Sims;
+    font-size: calc(0.2rem + 0.7vw );
+    text-align: center;
+    color: #fff; 
+    margin-left: 1vw;
+    text-decoration: none;
+}
+
+.Textolinks:hover {
+    
+    font-family: Sims;
+    font-size: calc(0.2rem + 0.7vw );
+    text-align: center;
+    color: #fff; 
+    margin-left: 1vw;
+
+    border-bottom: solid 0.1vw;
+}
+
+#ContenedorLogos {
+    width: 85%;
+    height: 75px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-top: 1vw;
+    border-top: 0.2vw solid #fff;
+}
+
+.LogosEA1 {
+    height: 100%;
+    width: auto;
+    float: left;
+}
+
+.LogosEA2 {
+    height: 100%;
+    width: auto;
+
+    float: right;
+}
+
+/*acaba el footer*/
+
+
+/*Empieza el grafico*/
+
+#Contenedorgrafico {
+    width: 100%;
+    height: auto;
+}
+
+.TituloGrande2 {
+    font-family: Sims;
+    font-size: calc(2rem + 2vw );
+    text-align: left;
+    color: #70C0F1; 
+
+    margin-top: 2vw;
+    margin-left: 5vw;
+}
+
+#Grafico {
+    display: block;
+    margin: 1vw auto;
+}
+
+/*acaba el grafico*/
+
+/*Empieza la seccion clasificaciones*/
+
+#Contenedorvotaciones {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin-top: 2vw;
+    padding-bottom: 3vw;
+}
+
+#votaciones {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;    
+
+}
+
+#cuadriculaTitulos {
+    width: 90%;
+    height: 2vw;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+}
+
+
+#cuadricula {
+    width: 90%;
+    height: 40vw;
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 1vw;
+    overflow: hidden;
+    border: 0.3vw solid #70C0F1;
+}
+
+.filascuadricula {
+    width: 100%;
+    height: 25%;
+    border-bottom: 0.3vw solid #70C0F1;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center ;
+}
+
+.columnascuadricula {
+    width: 25%;
+    height: 100%;
+    border-right: 0.3vw solid #70C0F1;
+}
+
+.Fotosstreamers {
+    height: 90%;
+    width: auto;
+    border-radius: 50%;
+}
+
+
+.textovotaciones {
+    font-family: Sims;
+    font-size: calc(0.5rem + 0.5vw );
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.Botones {
+    width: 5.5vw;
+    height: 2.5vw;
+
+    display: block;
+
+    margin-top: 1vw;
+    margin-right: auto;
+    margin-left: auto;
+
+    border: 0px;
+    border-radius: 1.5vw;
+
+    font-family: Sims;
+    font-size: calc(0.5rem + 0.5vw );
+    margin-top: 1vw;
+    text-align: center;
+    color: white;
+
+    transition: 0.15s;
+}
+
+.Botones:Hover {
+    box-shadow: inset 0px 0px 40px rgba(0,0,0,0.2 );
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+}
+
+/*Acaba la clasificaciones*/
+
+/*Empieza la seccion calendario*/
+
+#calendario {
+    width: 70%;
+    height: auto;
+
+    margin-top: 2vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3vw;
+}
+
+#calendario a {
+    text-decoration: none;
+}
+
+.Calendariostreamers {
+  width: 100%;
+  height: 10vw;
+
+  border-radius: 3.5vw;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2vw;
+
+  box-shadow: 8px 8px 16px rgba(0,0,0,0.2); 
+}
+
+.Calendariostreamers:hover {
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.5 );    
+}
+
+.Titulocalendario {
+    font-family: Sims;
+    font-size: calc(0.8rem + 1vw );
+    color: #fff;
+    
+}
+
+.Twitchlink {
+    width: 8vw;
+}
+
+.Titulocalendario2 {
+
+    font-family: Sims;
+    font-size: calc(0.8rem + 0.6vw );
+    color: #6441A5;
+    line-height: 30px;
+}
+
+.icon {
+    height: 1.5vw;
+    line-height: 2vw;
+    float: left;
+    line-height: 30px;
+    padding-right: 0.5vw;
+}
+    
+/*Acaba la seccion calendario*/

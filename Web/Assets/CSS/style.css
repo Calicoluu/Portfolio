@@ -1,0 +1,466 @@
+@font-face{
+  font-family:temp3;
+  src:  url("../Fonts/EddaCapsRegular.otf");
+}
+
+
+body {
+  background-color: #D9D9D6!important;
+}
+/*aqui empieza el css del menú*/
+
+.contenedor-menu {
+  width: 100vw;
+  height: auto;
+  background-color: rgba(217, 217, 214, 0.8);
+  position:fixed !important;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+
+}
+
+.navbar-brand {
+  height: 4vw;
+  min-height: 60px;
+  width: auto;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2849, 49, 49, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*Botones menu*/
+
+.botones{
+  font-size: calc(1rem + 0.3vw);
+  font-family: temp3;
+  color: #313131 !important; 
+}
+
+.botones:hover, .nav-link:focus {
+  font-size: calc(1rem + 0.3vw);
+  font-family: temp3;
+  color: #5F5F5F !important ;
+}
+
+/*Aqui se acaba el menú*/
+
+/*Aqui empieza el hero*/
+#Foto-hero{
+  width: 51vw;
+  height: auto;
+  min-width: 300px;
+}
+
+/*Aqui empieza el hero*/
+
+/*Aqui empieza la seccion ¨quienes somos¨*/
+
+#contenedor-seccion {
+  margin: auto;
+  width: 60vw;
+  height: auto;
+  margin-top: calc(50px + 8vw);
+  margin-bottom: calc(50px + 9vw);
+}
+
+.espacio{
+  height: 5vw;
+}
+
+.Titulo {
+  font-size: calc(1.8rem + 0.3vw);
+  font-family: 'temp3', sans-serif;
+  color: #313131 !important; 
+}
+
+.Text-normal p{
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.8rem + 0.2vw);
+  color: #313131 !important; 
+  text-decoration: none !important; 
+  vertical-align: top;
+}
+
+#Foto-escaleras{
+  height: 25vw;
+  min-height: 250px;
+  min-width: 150px;
+  width: auto;
+  object-fit: cover;
+}
+
+
+
+
+/*Aqui acaba la seccion ¨quienes somos¨*/
+
+
+
+/*Aqui empieza la galeria tipo masonry*/
+
+.video {
+  width: 17vw !important;
+  height: 13.2vw !important;
+  min-width: 300px;
+  min-height: 240px;
+}
+
+.imagen-reset{
+
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  max-width: 1620px;
+  text-align: center !important;
+}
+
+.masonry {
+  transition: all .5s ease-in-out;
+  column-gap: 20px;
+  column-fill: initial;
+}
+
+.masonry .brick {
+  margin-bottom: 30px;
+  display: inline-grid; /* Fix the misalignment of items */
+  vertical-align: top; /* Keep the item on the very top */
+}
+
+.masonry .brick img {
+  transition: all .5s ease-in-out;
+  backface-visibility: hidden; /* Remove Image flickering on hover */
+}
+
+.masonry .brick:hover img {
+  opacity: 0.50;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/*Aqui acaba la galeria masonry*/
+
+/*Aqui empieza el footer*/
+
+#contenedor-footer {
+  width: 100% !important;
+  height: auto;
+}
+
+.Botones-footer {
+  position: relative;
+  top: 40px; 
+  left: 0px;
+}
+
+.Botones-footer a{
+  text-decoration: none;
+  color: transparent;
+}
+
+.iconos2 {
+  height: 6vw;
+  width: auto;
+  min-height: 65px;
+  -webkit-filter: drop-shadow(0px 0px 5px #5F5F5F);
+  filter: drop-shadow(0px 0px 5px #5F5F5F);
+}
+
+.iconos {
+  height: 6vw;
+  width: auto;
+  min-height: 65px;
+}
+
+.borde {
+  border-right: solid 3px;
+  border-color: #5F5F5F;
+}
+
+.Textlink {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.7rem + 0.1vw);
+  color: #D9D9D6 !important; 
+  text-decoration: none !important; 
+
+}
+
+.Textlink:hover{
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.7rem + 0.1vw);
+  color: #D9D9D6 !important;
+  text-decoration: underline !important;
+}
+
+.Textfooter {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.7rem + 0.1vw);
+  color: #D9D9D6 !important; 
+  text-decoration: none !important; 
+}
+
+.contenedor-copyright {
+  width: 100%;
+  height: auto;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  background-color: #313131;
+  color: #D9D9D6 ;
+}
+
+@media (max-width: 768px) {
+  .borde {
+    border-right: 0px;
+    border-bottom: 2px solid;
+    border-color: #5F5F5F;
+  }
+
+}
+
+/*Aqui acaba el footer*/
+
+/*Aqui acaba el index. html y comença entrades.html*/
+
+/*Aqui empieza el hero*/
+
+#p-fixed {
+  position: fixed;
+  top: 80vh;
+  left: 91.2vw;
+  z-index: 23;
+}
+
+@media (max-width: 1400px) {
+#p-fixed {
+  position: fixed;
+  top: 80vh;
+  left: 80vw;
+  z-index: 23;
+  min-height: 100px !important;
+}
+
+}
+
+@media (max-width: 600px) {
+#p-fixed {
+  position: fixed;
+  top: 80vh;
+  left: 75vw;
+  z-index: 23;
+  min-height: 80px !important;
+}
+
+}
+
+
+.foto-hero {
+  height: 30vw;
+  max-height: 400px;
+  min-height: 300px;
+
+  background-image: url("../Media/imagen-entradas.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.Titulo-hero {
+  font-size: calc(1.3rem + 1.5vw);
+  font-family: temp3;
+  color: #d9d9d6 !important; 
+}
+
+.Subitulo-hero {
+  font-size: calc(0.6rem + 1.5vw);
+    font-family: 'Roboto', sans-serif;
+  color: #d9d9d6 !important; 
+}
+
+
+/*Aqui acaba el hero*/
+
+/*Aqui empieza la sección entradas*/
+
+.cont-entradas {
+  width: 80vw;
+}
+
+/*Entrada +1400px*/
+
+.entradas {
+  width: 60vw !important;
+  height: auto;
+  border-radius: 1vw;
+  border: solid 2px;
+  border-color: #7D1609;
+  position:  relative  ;
+  overflow:   hidden  ;
+}  
+
+.overlay {
+  position: absolute; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  display:  block;
+   transition:all .3s ease-in;   
+
+  border-radius:  1vw;
+  background-color: #7d1609;
+  
+}
+
+.entradas:hover .overlay {
+  top:  -200px; 
+  opacity:  0;
+}
+
+#borde-2 {
+  border-bottom: solid 2px;
+  border-color: #5F5F5F;
+}
+
+.borde-3 {
+  border-left: dashed 2px;
+  border-color: #7D1609;
+}
+
+.foto-entradas {
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw !important;
+  min-width: 270px;
+}
+
+.Text-normal-2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.66rem + 0.4vw) !important;
+  color: #313131 !important; 
+}
+
+.Titulo-2 {
+  font-size: calc(1.3rem + 0.2vw);
+  font-family: temp3;
+  color: #313131 !important; 
+}
+
+.Text-normal-3 {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: calc(0.66rem + 0.4vw) !important;
+  color: #313131 !important;
+}
+
+.form {
+  padding: 0.375rem 1.2rem 0.375rem 0.75rem !important;
+  color: #313131 !important;
+  width: auto !important;
+
+  font-weight: 400 ;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: calc(0.66rem + 0.4vw) !important;
+  
+  border: solid 2px !important; 
+  border-color: #313131 !important;
+
+  background-color: transparent !important;
+  
+}
+
+.btn-primary {
+  background-color: #7D1609 ;
+  border-color: #7D1609 ;
+}
+
+
+.p-relative {
+  width: auto;
+  position: relative;
+}
+
+.p-absolute{
+  
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+
+}
+
+
+@media (max-width: 1400px) {
+  .entradas {
+    display: none !important;
+  }     
+
+  .entradas-2 {
+    display: block !important;
+  }
+}
+
+/*Entrada -1400px*/
+.entradas-2 {
+  display: none;
+  width: 35vw;
+  height: 35vw;
+  min-width: 220px;
+  min-height: 375px;
+
+  border-radius: 1vw;
+  border: solid 2px;
+  border-color: #7D1609;
+}
+
+#bgi-entrada1 {
+background-image: linear-gradient( rgba(217, 217, 214, 0.75), rgba(217, 217, 214, 0.75)), url("../Media/Fotos entradas/fotoentradas-1400 (1).jpg");
+background-position: center;
+}
+
+#bgi-entrada2 {
+background-image: linear-gradient( rgba(217, 217, 214, 0.75), rgba(217, 217, 214, 0.75)), url("../Media/Fotos entradas/fotoentradas-1400 (2).jpg");
+background-position: center;
+}
+
+#bgi-entrada3 {
+background-image: linear-gradient( rgba(217, 217, 214, 0.75), rgba(217, 217, 214, 0.75)), url("../Media/Fotos entradas/fotoentradas-1400 (3).jpg");
+background-position: center;
+}
+
+.Text-normal-4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.5rem + 0.5vw) !important;
+  color: #313131 !important; 
+}
+
+.Titulo-3 {
+  font-size: calc(1.2rem + 0.8vw);
+  font-family: temp3;
+  color: #313131 !important; 
+}
+
+
+/*Lucía Llago-Obra final 2º Cfgm asistencia al producto gráfico interactivo ♡

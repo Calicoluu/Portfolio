@@ -1,0 +1,560 @@
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+
+@font-face {
+    font-family:"Cageroll";
+    font-style: Standard;
+    src: url("../Fonts/Cageroll-Standard.otf");
+}
+
+@font-face {
+    font-family:"Fontawesomebrands";
+    font-style: Standard;
+    src: url("../Fonts/Font Awesome 5 Brands-Regular-400.otf");
+}
+
+@font-face {
+    font-family:"Fontawesomeregular";
+    font-style: Standard;
+    src: url("../Fonts/Font Awesome 5 Pro-Regular-400.otf");
+}
+
+@font-face {
+    font-family:"Fontawesomesolid";
+    src: url("../Fonts/Font Awesome 5 Pro-Solid-900.otf");
+}
+
+/*Css general*/
+
+body {
+	background-color: #FFDEEE;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*CSS transiciones*/
+
+#Transition1 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+
+	top: 0px;
+	left: 0px;
+
+	background-color: #E71D73;
+
+	animation-name: loadingpage1;
+ 	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.2s;
+}
+
+@keyframes loadingpage1 {
+  from { top: 0px; height: 100%;}
+  to {top: 100%; height: 0%;}
+}
+
+#Transition2 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+
+	top: 0px;
+	right: 0px;
+
+	background-color: #E71D73;
+
+	animation-name: loadingpage2;
+ 	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.2s;
+
+	z-index: 15;
+}
+
+@keyframes loadingpage2 {
+  from { right: 0px; width: 100%;}
+  to {right: 100%; width: 0%;}
+}
+
+
+
+/*CSS menu 1*/
+
+#Barramenu {
+	width: 100vw;
+	height: 5vw;
+
+	background-color: #FF92BF;
+
+	display: flex;
+	justify-content: center;
+}
+
+#ContenedorMenu {
+	width: 80vw;
+	height: auto;
+
+	display: flex;
+}
+
+#LogoMenu {
+	width: 95%;
+	height: 95%;
+}
+
+/* acaba CSS menu 1*/
+
+
+/*CSS menu 2*/
+
+.Botonhamburguesa {
+	font-family: Fontawesomesolid;
+	font-size: 3vw;
+	color: white;
+
+	text-decoration: none;
+
+	margin: 0.5vw;
+}
+
+
+#Menu {
+	width: 100%;
+	height: 0%;
+
+	position: fixed;
+
+	background: linear-gradient(to bottom right, #98FFEE 10%, 40%, #E71D73 90%);
+
+	list-style-type: none;
+	z-index: 8;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	transition: 0.75s; 
+	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+}
+
+#Contenedormenudesplegado {
+	width: 80.8vw;
+	height: auto;
+	
+}
+
+.Elemenmenu {
+	margin: 2vw;
+}
+
+.Elemenmenu a{
+	font-family: Cageroll ;
+	font-style: Roll;
+	color: white;
+
+	font-size: 4vw;
+
+	transition: text-shadow 0.2s , font-size 0.2s;
+
+}
+
+.Elemenmenu a:hover {
+	text-shadow: 0 0 30px #fff;
+	font-size: 5.5vw;
+}
+
+#contenedorrrss {
+	height: 3vw;
+
+	margin-top: 15vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.RRSS{
+	text-align: center;
+	font-family: Fontawesomebrands;
+	font-size: 2.5vw;
+	margin-right: 1vw;
+
+	color: #fff;
+	transition: text-shadow 0.2s , font-size 0.2s;
+	
+}
+
+.RRSS:hover {
+	font-size: 3vw;
+	text-shadow: 0 0 30px #fff;
+}
+
+
+/*Hero index*/
+#headerhome {
+	width: 100vw;
+	height: 90vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url("../Media/pinkgradient.jpg");
+	background-size: cover;
+}
+
+#titulo {
+	width: 60vw;
+	height: 23vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url("../Media/Logos/estrella.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#titulo a {
+	font-family: Cageroll ;
+	font-style: Roll;
+	color: white;
+
+	font-size: 10vw;
+
+	transition: font-size 0.5s , text-shadow 0.5s , color 0.5s;
+
+	text-decoration: none;
+}
+
+#titulo a:hover {
+
+	font-size: 12vw;
+	text-shadow: 0 0 30px #E71D73;
+	color: #E71D73;
+}
+
+
+/*CSS eleccion de apartados del porfolio*/
+
+
+#Contenedoropciones {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  overflow: hidden;
+
+}
+
+/*Transicion, referencia https://codepen.io/animationbro/pen/WNvperV*/
+
+.Opciones {
+  width: 25vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.textofotos{
+	rotate: -90deg;
+
+	transition: rotate 0.4s , text-shadow 0.4s;
+
+	font-family: Cageroll ;
+	font-style: Roll;
+	color: #E71D73;
+
+	font-size: 3vw;
+
+	display: block;
+}
+
+.Opciones {
+    -webkit-transition: all 0.4s cubic-bezier(0.61, -0.44, 0.33, 1.39);
+    transition: all 0.4s cubic-bezier(0.61, -0.44, 0.33, 1.39);
+  }
+ .Opciones:hover {
+    width: 50vw;
+  }
+ .Opciones:hover .textofotos {
+ 	rotate: 0deg;
+
+ 	text-shadow: 0 0 30px #E71D73;
+
+  }
+
+/*boton cv*/
+
+#Botoncv {
+	 background-color: #E71D73;
+	 font-family: Cageroll;
+	 font-size: 1.5vw;
+	 padding: 1vw;
+
+
+	 position: fixed;
+
+	 bottom: 2vw;
+	 right: 100vw;
+
+	 border-radius: 2vw;
+	 color: #FFF;
+
+	transition: all 0.2s;
+
+	animation-name: Botonmovimiento;
+	animation-duration: 0.6s;
+	animation-delay: 0.2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes Botonmovimiento{
+	from { right: 80vw;}
+ 	to {right: 2vw;}
+}
+
+#Botoncv:hover {
+	background-color: #fff;
+	 box-shadow: 0 0 30px #fff;
+	color: #E71D73;
+}
+
+/*Header*/
+
+#headersecciones {
+	width: 100vw;
+	height: 30vw;
+	background-color: red;
+
+	display: flex;
+	justify-content: center;
+	align-items: center	;
+	background-image: url("../Media/fondorosa (1).jpg");
+	background-size: cover;
+	padding-bottom: 2vw;
+
+	 box-shadow: inset 0 0 2vw #CE4881;
+}
+
+#fotomia{
+	width: 15vw;
+	height: 15vw;
+
+	border-radius: 10vw;
+
+	background-image: url("../Media/Fotosmias/1.jpg");
+	background-position: center;
+	background-size: cover;
+
+	margin-right: 2vw;
+	animation-iteration-count: infinite;
+    animation-name: fotosmias;
+    animation-duration: 30s;
+}
+
+@keyframes fotosmias {
+    0% { background-image: url("../Media/Fotosmias/1.jpg"); }
+    16.6% { background-image: url("../Media/Fotosmias/1.jpg");}
+    33.33% { background-image: url("../Media/Fotosmias/3.jpg"); }
+    49.93% { background-image: url("../Media/Fotosmias/5.jpg"); }
+    66.5% { background-image: url("../Media/Fotosmias/6.jpg"); }
+    83.13% { background-image: url("../Media/Fotosmias/7.jpg"); }
+    100% { background-image: url("../Media/Fotosmias/1.jpg"); }
+}
+
+#Textoheader {
+	width: 40vw;
+
+	margin-left: 2vw;
+
+	color: #fff;
+	text-shadow: 0 0 30px #fff;
+}
+#Textoheader h1 {
+	font-family: Cageroll;
+	font-size: 1.5vw;
+	margin-bottom: 1vw;
+}
+
+#Textoheader p {
+	font-family: Roboto;
+	font-size: 1vw;
+}
+
+/*Portfolio contenido*/
+
+#contenedorporfolio {
+	width: 100vw;
+	height: auto;
+
+background-color: #FF92BF;
+}
+
+.contenedorfotos {
+	width: 100vw;
+	height: auto;
+    display: flex;
+}
+
+
+.fotosportfolio {
+	width: 33.3%;
+	height: 16.56vw;
+	margin: 0 !important;
+	padding: 0 !important;
+    font-size: 0;
+
+	display: inline-flex;
+
+	background-position: center;
+	background-size: cover;
+ 	background-blend-mode: multiply ;
+
+	align-items: center;
+	justify-content: center;
+
+	display: flex;
+
+
+}
+
+#contenedortextofotos {
+	text-align: center;
+}
+
+.titulofoto {
+	color: #fff	;
+	text-shadow: 0 0 30px #FF92BF;
+	font-family: Cageroll;
+	font-size: 2vw;
+
+	transition: all 0.2s;
+}
+
+.subtitulofoto {
+	color: #fff	;
+	font-family: Roboto;
+	font-size: 1vw;
+
+	transition: all 0.2s;
+}
+
+.fotosportfolio:hover .titulofoto{
+	font-size: 2.2vw;
+	text-shadow: 0 0 30px #fff;
+}
+
+.fotosportfolio:hover .subtitulofoto{
+	font-size: 1.2vw;
+	text-shadow: 0 0 30px #fff;
+}
+
+/*Footer*/
+
+#Footer {
+	width: 100vw;
+	height: auto;
+
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+
+	background-color: #fff;
+
+	z-index: 13;
+
+	text-align: center;
+
+  	box-shadow: inset 0 0 2vw #CE4881;
+}
+
+#Textofootermail{
+	font-family: Cageroll ;
+	color: #E71D73;
+
+	font-size: 2vw;
+	transition: all 0.2s;
+
+}
+
+#Textofootermail:hover{
+	font-size: 2.2vw;
+	text-shadow: 0 0 20px #E71D73;
+}
+
+#linkredirigir {
+	width: 100vw;
+	height: 5vw;
+	display: inline-flex;
+
+	justify-content: center;
+	align-items: center;
+}
+
+#linkredirigir a {
+	font-family: Cageroll;
+	font-size: 1.5vw;
+	display: inline-flex;
+	transition: all 0.2s;
+	color: #E71D73;
+}
+
+#linkredirigir p {
+
+	font-family: Fontawesomeregular;
+	font-size: 1.5vw;
+	transition: all 0.2s;
+	color: #E71D73;
+
+}
+
+#linkredirigir a:hover {
+	font-size: 1.8vw;
+	text-shadow: 0 0 20px #E71D73;
+
+}
+
+#linkredirigir p:hover {
+	font-size: 1.8vw;
+	text-shadow: 0 0 20px #E71D73;
+
+}
+
+#contenedorrrssfooter {
+	margin-top: 1vw;
+
+
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	color: #E71D73;
+}
+
+
+.RRSSfooter{
+	text-align: center;
+	font-family: Fontawesomebrands;
+	font-size: 2.5vw;
+	margin-right: 1vw;
+
+	color: #E71D73;
+	transition: text-shadow 0.2s , font-size 0.2s;
+	
+}
+
+.RRSSfooter:hover {
+	font-size: 3vw;
+	text-shadow: 0 0 30px #E71D73;
+}
+
+/*Lucia Llago ❤️*/

@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Author" content="Lucia Llago">
+ <link rel="icon" type="image/x-icon" href="Media/NUEVOLOGOROLL20.png">
+
+	<link rel="stylesheet" href="CSS/Style.css">
+
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<title>Roll20 rediseño</title>
+</head>
+<body>
+
+	<nav id="Menulateral">
+
+		<ul id="Menu">
+			<div class="contenedoricono">
+			</div>
+
+			<div class="contenedoricono">
+				
+			<li class="elemenu"> <a style="text-shadow: 
+                0 0 5px rgba(150, 70, 160, 0.4); color: #9F48A5;" href="index.html"></a> <p >Inicio</p></li>
+          <li class="elemenu"> <a  href="Busqueda.html"></a> <p>Buscar</p></li>
+          <li class="elemenu"> <a href="https://roll20.net"></a> <p>Suscribir</p></li>
+
+      </div>
+
+      <div class="contenedoricono">
+        
+      <li class="elemenu"> <a href="#"></a><p>Perfil</p> </li>
+
+			</div>
+      </ul>
+		
+
+	</nav>
+
+	<div  id="modalcreator" class="modalcreator">
+
+		<div class="rectangle">
+      </div>
+          <input id="imageInput4" style="width: 100%; font-size: 1rem;" type="file" accept="image/png, image/jpeg" />
+
+
+      <div class="frame">
+
+
+        <input class="Form" style="width:100%; font-size: 1.25rem;" type="text" value="Nombre de la partida...*" />
+
+
+        <div style="gap: 24px;:" class="Contenedorflexvertical">
+
+          <div style="gap: 4px;" class="Contenedorflexvertical">
+
+            <h4 class="">Elige una hoja de personaje</h4>
+            <p>Las hojas de personajes proporcionan una plantilla para administrar los atributos y el estado de los personajes en tu partida, como una hoja de papel tradiciona</p>
+          <select class="Form" name="Elige una hoja de personaje" form="character-sheets">
+
+            <option value="Selecciona-un-sistema-de-juego">Selecciona un sistema de juego</option>
+            <option value="amber-diceless">Amber Diceless</option>
+          <option value="anima-beyond">Anima: Beyond Fantasy</option>
+          <option value="apocalypse-world">Apocalypse World</option>
+          <option value="arcanum">Arcanum</option>
+          <option value="blades-in-the-dark">Blades in the Dark</option>
+          <option value="blood-and-bullets">Blood and Bullets</option>
+          <option value="bugbears-and-broadswords">Bugbears & Broadswords</option>
+          <option value="call-of-cthulhu-7e">Call of Cthulhu 7th Edition</option>
+          <option value="cairn">Cairn</option>
+          <option value="chronicles-of-darkness">Chronicles of Darkness</option>
+          <option value="corIolis">Coriolis: The Third Horizon</option>
+          <option value="cyberpunk-red">Cyberpunk Red</option>
+          <option value="dark-heresy">Dark Heresy</option>
+          <option value="deadlands">Deadlands</option>
+          <option value="delta-green">Delta Green</option>
+          <option value="dnd-5e-dmg">D&D 5E Dungeon Master's Guide</option>
+          <option value="dnd-5e-mm">D&D 5E Monster Manual</option>
+          <option value="dnd-5e-phb">D&D 5E Player's Handbook</option>
+          <option value="eclipse-phase">Eclipse Phase</option>
+          <option value="edge-of-the-sun">Edge of the Sun</option>
+          <option value="fading-suns">Fading Suns</option>
+          <option value="fiasco">Fiasco</option>
+          <option value="gloomhaven">Gloomhaven</option>
+          <option value="johnny-quick">Johnny Quick</option>
+          <option value="karma">Karma</option>
+          <option value="legend-of-the-five-rings">Legend of the Five Rings</option>
+          <option value="lancer">Lancer</option>
+          <option value="midgard">Midgard</option>
+          <option value="masks">Masks: A New Generation</option>
+          <option value="mystery-masters">Mystery Masters</option>
+          <option value="nemesis">Nemesis</option>
+          <option value="numenera">Numenera</option>
+          <option value="overlight">Overlight</option>
+          <option value="paranoia">Paranoia</option>
+          <option value="pathfinder-bestiary">Pathfinder Bestiary</option>
+          <option value="pathfinder-core">Pathfinder Core Rulebook</option>
+          <option value="pbtas">Powered by the Apocalypse</option>
+          <option value="rifts">Rifts</option>
+          <option value="runequest">RuneQuest</option>
+          <option value="savage-worlds">Savage Worlds</option>
+          <option value="shadowrun">Shadowrun</option>
+          <option value="shadowrun-6e">Shadowrun 6th Edition</option>
+          <option value="shadow-of-the-demon-lord">Shadow of the Demon Lord</option>
+          <option value="sprawl-rpg">Sprawl RPG</option>
+          <option value="spire">Spire</option>
+          <option value="stars-without-number">Stars Without Number</option>
+          <option value="star-wars-edge-of-the-empire">Star Wars Edge of the Empire</option>
+          <option value="star-wars-force-and-destiny">Star Wars Force and Destiny</option>
+          <option value="star-wars-rebels">Star Wars Rebels</option>
+          <option value="the-black-hole">The Black Hole</option>
+          <option value="the-expanse">The Expanse</option>
+          <option value="the-one-ring">The One Ring</option>
+          <option value="tales-from-the-loop">Tales from the Loop</option>
+          <option value="tales-of-zale">Tales of Zale</option>
+          <option value="trudvang">Trudvang Chronicles</option>
+          <option value="tunnels-and-trolls">Tunnels & Trolls</option>
+          <option value="unchartered-realms">Uncharted Realms</option>
+          <option value="warhammer-40k-rpg">Warhammer 40K RPG</option>
+          <option value="warhammer-fantasy-rpg">Warhammer Fantasy RPG</option>
+  			<option value="witcher-rpg">The Witcher RPG</option>
+ 			 <option value="wonderland">Wonderland</option>
+            </select>
+          </div>
+
+                <div style="gap: 4px;" class="Contenedorflexvertical">
+
+            <h4 class="">Elige un Módulo</h4>
+            <p>Los módulos a menudo incluyen mapas, personajes, notas y mucho más para ayudarte a comenzar un juego lo más rápido posible. Son fácilmente personalizables y ampliables. </p>
+          <select class="Form" name="Elige una hoja de personaje" form="character-sheets">
+
+            <option value="curse-of-strahd">Selecciona tu modulo</option>
+            <option value="curse-of-strahd">Curse of Strahd</option>
+              <option value="lost-mine-of-phandelver">Lost Mine of Phandelver</option>
+              <option value="rise-of-tiamat">Rise of Tiamat</option>
+              <option value="tomb-of-annihilation">Tomb of Annihilation</option>
+              <option value="out-of-the-abyss">Out of the Abyss</option>
+              <option value="descent-into-avernus">Descent into Avernus</option>
+              <option value="storm-king's-thunder">Storm King's Thunder</option>
+              <option value="waterdeep-dragon-heist">Waterdeep: Dragon Heist</option>
+              <option value="waterdeep-dungeon-of-the-mad-mage">Waterdeep: Dungeon of the Mad Mage</option>
+              <option value="ghosts-of-saltmarsh">Ghosts of Saltmarsh</option>
+              <option value="icewind-dale-rime-of-the-frostmaiden">Icewind Dale: Rime of the Frostmaiden</option>
+              <option value="hoard-of-the-dragon-queen">Hoard of the Dragon Queen</option>
+              <option value="princes-of-the-apocalypse">Princes of the Apocalypse</option>
+              <option value="strange-aeons">Strange Aeons</option>
+              <option value="kingmaker">Kingmaker</option>
+              <option value="the-sunless-citadel">The Sunless Citadel</option>
+              <option value="expedition-to-castle-ravenloft">Expedition to Castle Ravenloft</option>
+              <option value="the-forge-of-fury">The Forge of Fury</option>
+              <option value="the-curse-of-the-crimson-throne">The Curse of the Crimson Throne</option>
+              <option value="hells-rebels">Hell's Rebels</option>
+            </select>
+          </div>
+
+            </div>
+
+        <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+             <button  onclick="togglecreator()" class="Boton2"  href=""><p style="font-weight: normal !important;">Cancelar</p></button> 
+
+            <a onclick="togglecreator()" class="Boton" href="index.html"><p>Crear partida</p></a>
+        </div>
+      </div>
+
+
+    </div>
+
+	<div id="ContenedorDashboardvertical">
+
+		<div style="flex-direction: column; padding: 2vw;" class="ContenedorVertical">
+
+			<div class="">
+				
+				<h1 style=" float: left; width: 50%;">Mis partidas</h1>
+
+				<div class="" style="float:left; width: 50%; display: flex; justify-content: end; gap: 1vw;">
+
+					<button onclick="togglecreator()" class="Boton" href="#"><p>Crear partida</p></button> 
+
+					<a class="Boton1" href=""><p>Buscar partida</p></a>
+				</div>
+
+			</div>
+				
+
+			<!-- Contenedor con todo el carrusel -->
+
+			<div class="Contenedorcarrusel">
+
+				<button id="prevButton" onclick="patras()"></button>
+
+			<!-- Contenedor padre, este contenedor tiene un 90% de ancho para que luego quepan dentro del otro contenedor los botones -->
+
+			<div id="Contenedorpadre">
+
+			<!-- Contenedor de las cards,este contenedor tiene que tener el ancho de todas las cards y sus espaciados juntos -->
+
+					<div id="cardContainer">
+
+				
+						<div class="card">
+							<img src="https://i.pinimg.com/originals/ed/d2/92/edd292025958dcc5bda162510755d011.jpg" alt="">
+
+							<div class="tituloicono">
+								<p>El Ocaso de los Imperios</p>
+								<button onclick="toggleicon('modaluser1')" class="icontoggle"></button>
+							</div>
+
+							<p>Siguiente partida: 31/1/2025</p>
+
+							<a class="Boton" href=""><p>Entrar en partida</p></a>
+
+
+							<div class="modaluser" id="modaluser1">	
+
+								<button class="toggleconfig" onclick="toggleconfig('modalconfig1')" class="toggleconfig" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Configuración</button>
+								<hr>
+
+
+								<!-- boton modal jugadores -->
+
+								<button class="toggleplayers" onclick="toggleplayers('Modalplayer1')" class="toggleplayers" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Ver jugadores</button>
+
+								<hr>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Entrar en la partida</a>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Abandonar Partida</a>
+							</div>
+						</div>
+
+
+					
+						<div class="card">
+							<img src="https://puzzlemania-154aa.kxcdn.com/products/2024/puzzle-artpuzzle-2000-pieces-epic-landscape.webp" alt="">
+
+							<div class="tituloicono">
+								<p>Los Hijos del Vacío</p>
+								<button onclick="toggleicon('modaluser2')" class="icontoggle"></button>
+							</div>
+
+							<p>Siguiente partida: 31/1/2025</p>
+
+							<a class="Boton" href=""><p>Entrar en partida</p></a>
+							<div class="modaluser" id="modaluser2">	
+								<button class="toggleconfig" onclick="toggleconfig('modalconfig2')" class="toggleconfig" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Configuración</button>
+								<hr>
+
+								<!-- boton modal jugadores -->
+
+								<button class="toggleplayers" onclick="toggleplayers('Modalplayer2')" class="toggleplayers" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Ver jugadores</button>
+
+								<hr>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Entrar en la partida</a>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Abandonar Partida</a>
+							</div>
+						</div>
+
+					
+						<div class="card">
+							<img src="https://assets1.ignimgs.com/2019/05/29/dndmobile-br-1559158957902_160w.jpg?width=1280" alt="">
+
+							<div class="tituloicono">
+								<p>La Canción del...</p>
+								<button onclick="toggleicon('modaluser3')" class="icontoggle"></button>
+							</div>
+
+							<p>Siguiente partida: 31/1/2025</p>
+
+							<a class="Boton" href=""><p>Entrar en partida</p></a>
+							<div class="modaluser" id="modaluser3">	
+								<button class="toggleconfig" onclick="toggleconfig('modalconfig3')" class="toggleconfig" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Configuración</button>
+								<hr>
+
+								<!-- boton modal jugadores -->
+
+								<button class="toggleplayers" onclick="toggleplayers('Modalplayer3')" class="toggleplayers" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Ver jugadores</button>
+
+								<hr>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Entrar en la partida</a>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Abandonar Partida</a>
+							</div>
+						</div>
+
+					
+
+						<div class="card">
+							<img src="https://litrpgreads.com/wp-content/uploads/2023/11/dnd-background-5e-2023-best.jpg" alt="">
+
+							<div class="tituloicono">
+								<p>El Corazón del Bosque</p>
+								<button onclick="toggleicon('modaluser4')" class="icontoggle"></button>
+							</div>
+
+							<p>Siguiente partida: 31/1/2025</p>
+
+							<a class="Boton" href=""><p>Entrar en partida</p></a>
+							<div class="modaluser" id="modaluser4">	
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Configuración</a>
+								<hr>
+
+								<!-- boton modal jugadores -->
+
+								<button class="toggleplayers" onclick="toggleplayers('Modalplayer4')" class="toggleplayers" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Ver jugadores</button>
+
+								<hr>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Entrar en la partida</a>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Abandonar Partida</a>
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2022/04/dnd-group-Cropped.jpg" alt="">
+
+							<div class="tituloicono">
+								<p>La Llama del Caos</p>
+								<button onclick="toggleicon('modaluser5')" class="icontoggle"></button>
+							</div>
+
+							<p>Siguiente partida: 31/1/2025</p>
+
+							<a class="Boton" href=""><p>Entrar en partida</p></a>
+							<div class="modaluser" id="modaluser5">	
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Configuración</a>
+								<hr>
+
+								<!-- boton modal jugadores -->
+
+								<button class="toggleplayers" onclick="toggleplayers('Modalplayer5')" class="toggleplayers" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Ver jugadores</button>
+
+								<hr>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Entrar en la partida</a>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Abandonar Partida</a>
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/208384742/original/da5fe79a8e5160d203c5791b7b1d3f200838c5d9/create-your-dungeons-and-dragons-character-or-dnd-party.png" alt="">
+
+							<div class="tituloicono">
+								<p>La Batalla por el Trono</p>
+								<button onclick="toggleicon('modaluser6')" class="icontoggle"></button>
+							</div>
+
+							<p>Siguiente partida: 31/1/2025</p>
+
+							<a class="Boton" href=""><p>Entrar en partida</p></a>
+							<div class="modaluser" id="modaluser6">	
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Configuración</a>
+								<hr>
+
+								<!-- boton modal jugadores -->
+
+								<button class="toggleplayers" onclCick="toggleplayers('Modalplayer6')" class="toggleplayers" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Ver jugadores</button>
+
+								<hr>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Entrar en la partida</a>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Abandonar Partida</a>
+							</div>
+						</div>
+
+						<div class="card">
+							<img src="https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24881595/WizardsOfTheCoast_DnD_DOMT_1_copy.jpg?quality=90&strip=all&crop=7.8,0,84.4,100" alt="">
+
+							<div class="tituloicono">
+								<p>El Laberinto de Cristal</p>
+								<button onclick="toggleicon('modaluser7')" class="icontoggle"></button>
+							</div>
+
+							<p>Siguiente partida: 31/1/2025</p>
+
+							<a class="Boton" href=""><p>Entrar en partida</p></a>
+							<div class="modaluser" id="modaluser7">	
+								<button class="toggleconfig" onclick="toggleconfig('modalconfig2')" class="toggleconfig" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Configuración</button>
+								<hr>
+
+								<!-- boton modal jugadores -->
+
+								<button class="toggleplayers" onclick="toggleplayers('Modalplayer7')" class="toggleplayers" style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Ver jugadores</button>
+
+								<hr>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Entrar en la partida</a>
+								<a style="display: flex; gap: 12px; align-items: center;" href=""><p></p>Abandonar Partida</a>
+							</div>
+						</div>
+					
+					</div>
+
+				</div>
+
+			<button id="nextButton" onclick="palante()"></button>
+
+			</div>
+
+			</div>
+
+			<div style="background: transparent; gap: 32px;" id="Contenedorpadre50" class="ContenedorVertical">
+
+				<div style="" class="Contenedores502"> 
+
+					<iframe width="1620" height="638" src="https://www.youtube.com/embed/aTaxnxY50L0" title="Roll20 video publicitario, CFGS-proyecto integrado Lucia llago" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </iframe>
+
+				</div>
+
+				<div style="flex-wrap: wrap; justify-content: space-between; padding: 2vw; " class="Contenedores50">
+
+					<h3 style="width:100%; margin-bottom: 1vw;">Aventuras de inicio</h3>
+
+					<div class="card2">
+						<img src="https://s3.amazonaws.com/files.d20.io/marketplace/3977003/SzQqwDafNPPOtIm7YVllUw/med.png?1719248116829" alt="">
+
+						<div class="tituloicono2">
+							<p>D&D Waterdeep: Dungeon...</p>
+						</div>
+
+						<p>Wizards of the Coast</p>
+
+						<a class="Boton2" href="">
+							<p>FREE</p>
+						</a>
+					</div>
+
+					<div class="card2">
+						<img src="https://s3.amazonaws.com/files.d20.io/marketplace/3857619/M5akip_w8Nab4hAd-z9lpA/med.jpg?1710519455684" alt="">
+
+						<div class="tituloicono2">
+							<p>D&D Waterdeep: Dungeon...</p>
+						</div>
+
+						<p>Wizards of the Coast</p>
+
+						<a class="Boton2" href="">
+							<p>FREE</p>
+						</a>
+					</div>
+
+					<div class="card2">
+						<img src="https://s3.amazonaws.com/files.d20.io/marketplace/3886238/yslaMGbnbdB4cjzmaWwmcg/med.jpg?1711744547678" alt="">
+
+						<div class="tituloicono2">
+							<p>D&D Frozen Sick Free Adventure</p>
+						</div>
+
+						<p>Modiphius Entertainment</p>
+
+						<a class="Boton2" href="">
+							<p>FREE</p>
+						</a>
+					</div>
+
+					<div class="cardsescondidas">
+						<img src="https://s3.amazonaws.com/files.d20.io/marketplace/3851291/h8e_9ya2eb0pY8oMWjFKOQ/med.jpg?1710198974586" alt="">
+
+						<div class="tituloicono2">
+							<p>Modiphius Entertainment</p>
+						</div>
+
+						<p>Dune: Fall of the Imperium Adventure</p>
+
+						<a class="Boton2" href="">
+							<p>FREE</p>
+						</a>
+					</div>
+
+					<div style="display: flex; justify-content: end; align-items: end; width: 100%;">
+						<a style="color: #fff; font-size: 1.25rem;" href=""><p>Ver más...</p></a>
+					</div>
+
+				</div>
+
+
+			</div>
+
+
+
+		
+
+
+	</div>
+
+								<div id="Modalplayer1" class="Modalplayer">
+
+								    <h4 style="margin-bottom: 16px; color: #1D1B20;">Ver jugadores</h4>
+
+								    <div style="background-color: #F8F8FF; box-shadow: 0px 4px 4px 0px #00000040; margin-bottom: 16px; justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p style="background-color: #84209D; color: #ffff;">GM</p>
+								            </div>
+								        </div>
+
+								    </div>
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								</div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+								    <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+								                    <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style="margin-right: 4px; font-family: icon-regular;"></span>Buscar jugador</p></a> 
+
+								                    <button onclick="hidemodalplayer('Modalplayer1')" class="Boton" href=""><p>Hecho</p></button>
+								                </div>
+
+								</div>
+
+
+								<div id="Modalplayer2" class="Modalplayer">
+
+								    <h4 style="margin-bottom: 16px; color: #1D1B20;">Ver jugadores</h4>
+
+								    <div style="background-color: #F8F8FF; box-shadow: 0px 4px 4px 0px #00000040; margin-bottom: 16px; justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p style="background-color: #84209D; color: #ffff;">GM</p>
+								            </div>
+								        </div>
+
+								    </div>
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								</div>
+
+
+								<div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+								    <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+								                    <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style="margin-right: 4px; font-family: icon-regular;"></span>Buscar jugador</p></a> 
+
+								                    <button onclick="hidemodalplayer('Modalplayer2')" class="Boton" href=""><p>Hecho</p></button>
+								                </div>
+
+								</div>
+
+
+								<div id="Modalplayer3" class="Modalplayer">
+
+								    <h4 style="margin-bottom: 16px; color: #1D1B20;">Ver jugadores</h4>
+
+								    <div style="background-color: #F8F8FF; box-shadow: 0px 4px 4px 0px #00000040; margin-bottom: 16px; justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p style="background-color: #84209D; color: #ffff;">GM</p>
+								            </div>
+								        </div>
+
+								    </div>
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								</div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+								    <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+								                    <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style="margin-right: 4px; font-family: icon-regular;"></span>Buscar jugador</p></a> 
+
+								                    <button onclick="hidemodalplayer('Modalplayer3')" class="Boton" href=""><p>Hecho</p></button>
+								                </div>
+
+								</div>
+
+
+								<div id="Modalplayer4" class="Modalplayer">
+
+								    <h4 style="margin-bottom: 16px; color: #1D1B20;">Ver jugadores</h4>
+
+								    <div style="background-color: #F8F8FF; box-shadow: 0px 4px 4px 0px #00000040; margin-bottom: 16px; justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p style="background-color: #84209D; color: #ffff;">GM</p>
+								            </div>
+								        </div>
+
+								    </div>
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+								    <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+								                    <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style="margin-right: 4px; font-family: icon-regular;"></span>Buscar jugador</p></a> 
+
+								                    <button onclick="hidemodalplayer('Modalplayer4')" class="Boton" href=""><p>Hecho</p></button>
+								                </div>
+
+								</div>
+
+
+								<div id="Modalplayer5" class="Modalplayer">
+
+								    <h4 style="margin-bottom: 16px; color: #1D1B20;">Ver jugadores</h4>
+
+								    <div style="background-color: #F8F8FF; box-shadow: 0px 4px 4px 0px #00000040; margin-bottom: 16px; justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p style="background-color: #84209D; color: #ffff;">GM</p>
+								            </div>
+								        </div>
+
+								    </div>
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+								    <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+								                    <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style="margin-right: 4px; font-family: icon-regular;"></span>Buscar jugador</p></a> 
+
+								                    <button onclick="hidemodalplayer('Modalplayer5')" class="Boton" href=""><p>Hecho</p></button>
+								                </div>
+
+								</div>
+
+								<div id="Modalplayer6" class="Modalplayer">
+
+								    <h4 style="margin-bottom: 16px; color: #1D1B20;">Ver jugadores</h4>
+
+								    <div style="background-color: #F8F8FF; box-shadow: 0px 4px 4px 0px #00000040; margin-bottom: 16px; justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p style="background-color: #84209D; color: #ffff;">GM</p>
+								            </div>
+								        </div>
+
+								    </div>
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+								    <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+								                    <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style="margin-right: 4px; font-family: icon-regular;"></span>Buscar jugador</p></a> 
+
+								                    <button onclick="hidemodalplayer('Modalplayer6')" class="Boton" href=""><p>Hecho</p></button>
+								                </div>
+
+								</div>
+
+
+								<div id="Modalplayer7" class="Modalplayer">
+
+								    <h4 style="margin-bottom: 16px; color: #1D1B20;">Ver jugadores</h4>
+
+								    <div style="background-color: #F8F8FF; box-shadow: 0px 4px 4px 0px #00000040; margin-bottom: 16px; justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p style="background-color: #84209D; color: #ffff;">GM</p>
+								            </div>
+								        </div>
+
+								    </div>
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+
+								    <div style="justify-content: space-between;" class="Usercard">
+
+								        <div style="gap: 16px; display: flex;">
+
+								            <img src="https://i.pinimg.com/236x/7c/5c/cd/7c5ccd8e285c4492e8620f537fe6423a.jpg" alt="">
+
+								            <div style="gap: 4px; align-items: start;" class="Contenedorflexvertical">
+								                
+								                <h5>Nombre de usuario</h5>
+								                <p>Jugador</p>
+
+
+								            </div>
+								        </div>
+
+								        <a style="font-size: 1rem; font-family: lato; display: flex; gap: 4px; align-items: center;" href=""><span></span>Expulsar</a> 
+
+								    </div>
+
+								    <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+								                    <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style="margin-right: 4px; font-family: icon-regular;"></span>Buscar jugador</p></a> 
+
+								                    <button onclick="hidemodalplayer('Modalplayer7')" class="Boton" href=""><p>Hecho</p></button>
+								                </div>
+
+								</div>
+
+<div  id="modalconfig1" class="modalconfig">
+
+      <div class="rectangle">
+      </div>
+          <input id="imageInput1" style="width: 100%; font-size: 1rem;" type="file" accept="image/png, image/jpeg" />
+
+
+      <div class="frame">
+
+            <div style="margin-top: 16px;" id="titleContainer">
+                <h3 id="cardTitle" class="editable-title">Título de partida</h3>
+
+                <input type="text" id="titleInput" class="title-editor" onblur="saveTitle()" onkeydown="checkEnter(event)" />
+
+                <button id="editButton" class="edit-button" onclick="startEditing('modalconfig1')"></button>
+            </div>
+
+
+        <div class="Contenedorflexvertical">
+
+          <div class="Contenedorflexvertical">
+
+            <h5 class="">Próxima partida:</h5>
+            <input  class="Form" type="date" id="start" name="trip-start" value="2024-08-26" min="2024-08-26" />
+
+            </div>
+            
+          </div>
+
+        <div class="Contenedorflexvertical">
+          <h5 class="">Jugando a:</h5>
+          <select class="Form" name="jugandoa" form="carform">
+
+            <option value="Selecciona-un-sistema-de-juego">Selecciona un sistema de juego</option>
+            <option value="amber-diceless">Amber Diceless</option>
+          <option value="anima-beyond">Anima: Beyond Fantasy</option>
+          <option value="apocalypse-world">Apocalypse World</option>
+          <option value="arcanum">Arcanum</option>
+          <option value="blades-in-the-dark">Blades in the Dark</option>
+          <option value="blood-and-bullets">Blood and Bullets</option>
+          <option value="bugbears-and-broadswords">Bugbears & Broadswords</option>
+          <option value="call-of-cthulhu-7e">Call of Cthulhu 7th Edition</option>
+          <option value="cairn">Cairn</option>
+          <option value="chronicles-of-darkness">Chronicles of Darkness</option>
+          <option value="corIolis">Coriolis: The Third Horizon</option>
+          <option value="cyberpunk-red">Cyberpunk Red</option>
+          <option value="dark-heresy">Dark Heresy</option>
+          <option value="deadlands">Deadlands</option>
+          <option value="delta-green">Delta Green</option>
+          <option value="dnd-5e-dmg">D&D 5E Dungeon Master's Guide</option>
+          <option value="dnd-5e-mm">D&D 5E Monster Manual</option>
+          <option value="dnd-5e-phb">D&D 5E Player's Handbook</option>
+          <option value="eclipse-phase">Eclipse Phase</option>
+          <option value="edge-of-the-sun">Edge of the Sun</option>
+          <option value="fading-suns">Fading Suns</option>
+          <option value="fiasco">Fiasco</option>
+          <option value="gloomhaven">Gloomhaven</option>
+          <option value="johnny-quick">Johnny Quick</option>
+          <option value="karma">Karma</option>
+          <option value="legend-of-the-five-rings">Legend of the Five Rings</option>
+          <option value="lancer">Lancer</option>
+          <option value="midgard">Midgard</option>
+          <option value="masks">Masks: A New Generation</option>
+          <option value="mystery-masters">Mystery Masters</option>
+          <option value="nemesis">Nemesis</option>
+          <option value="numenera">Numenera</option>
+          <option value="overlight">Overlight</option>
+          <option value="paranoia">Paranoia</option>
+          <option value="pathfinder-bestiary">Pathfinder Bestiary</option>
+          <option value="pathfinder-core">Pathfinder Core Rulebook</option>
+          <option value="pbtas">Powered by the Apocalypse</option>
+          <option value="rifts">Rifts</option>
+          <option value="runequest">RuneQuest</option>
+          <option value="savage-worlds">Savage Worlds</option>
+          <option value="shadowrun">Shadowrun</option>
+          <option value="shadowrun-6e">Shadowrun 6th Edition</option>
+          <option value="shadow-of-the-demon-lord">Shadow of the Demon Lord</option>
+          <option value="sprawl-rpg">Sprawl RPG</option>
+          <option value="spire">Spire</option>
+          <option value="stars-without-number">Stars Without Number</option>
+          <option value="star-wars-edge-of-the-empire">Star Wars Edge of the Empire</option>
+          <option value="star-wars-force-and-destiny">Star Wars Force and Destiny</option>
+          <option value="star-wars-rebels">Star Wars Rebels</option>
+          <option value="the-black-hole">The Black Hole</option>
+          <option value="the-expanse">The Expanse</option>
+          <option value="the-one-ring">The One Ring</option>
+          <option value="tales-from-the-loop">Tales from the Loop</option>
+          <option value="tales-of-zale">Tales of Zale</option>
+          <option value="trudvang">Trudvang Chronicles</option>
+          <option value="tunnels-and-trolls">Tunnels & Trolls</option>
+          <option value="unchartered-realms">Uncharted Realms</option>
+          <option value="warhammer-40k-rpg">Warhammer 40K RPG</option>
+          <option value="warhammer-fantasy-rpg">Warhammer Fantasy RPG</option>
+  <option value="witcher-rpg">The Witcher RPG</option>
+  <option value="wonderland">Wonderland</option>
+            </select>
+          </div>
+
+          <div class="Contenedorflexvertical">
+            <h5 class="">Añadidos:</h5>
+          <select class="Form"  name="Añadidos" form="carform">
+                <option value="Selecciona un añadido">Selecciona un añadido</option>
+                  <option value="dynamic-lighting">Dynamic Lighting</option>
+                  <option value="fog-of-war">Fog of War</option>
+                  <option value="grids-and-measurement">Grids and Measurement Tools</option>
+                  <option value="rollable-tables">Rollable Tables</option>
+                  <option value="macros">Macros</option>
+                  <option value="handouts">Handouts</option>
+                  <option value="character-sheets">Character Sheets</option>
+                  <option value="audio-and-music">Audio and Music</option>
+                  <option value="art-assets">Art Assets</option>
+                  <option value="map-making-tools">Map-Making Tools</option>
+                  <option value="tokens">Tokens</option>
+                  <option value="beyond20-integration">Beyond20 Integration</option>
+                  <option value="combat-maps">Combat Maps</option>
+                  <option value="encounter-builder">Encounter Builder</option>
+                  <option value="chat-commands">Chat Commands</option>
+                  <option value="npc-characters">NPC Characters</option>
+                  <option value="scripting-api">Scripting API</option>
+                  <option value="dndbeyond-embed">D&D Beyond Embed</option>
+                  <option value="token-mod">Token Mod</option>
+                  <option value="dice-roller">Dice Roller</option>
+                  <option value="player-management">Player Management</option>
+            </select>
+          </div>
+
+
+
+          <div class="Contenedorflexvertical">
+          <h5 class="">Tokens:</h5>
+          <select class="Form" name="tokens" form="carform">     
+                <option value="selecciona-un-token">Selecciona un token</option>
+                <option value="wizard">Wizard Token</option>
+                <option value="warrior">Warrior Token</option>
+                <option value="archer">Archer Token</option>
+                <option value="cleric">Cleric Token</option>
+                <option value="rogue">Rogue Token</option>
+                <option value="dragon">Dragon Token</option>
+                <option value="goblin">Goblin Token</option>
+                <option value="ogre">Ogre Token</option>
+                <option value="elf">Elf Token</option>
+                <option value="dwarf">Dwarf Token</option>
+                <option value="mage">Mage Token</option>
+                <option value="priest">Priest Token</option>
+                <option value="knight">Knight Token</option>
+                <option value="assassin">Assassin Token</option>
+                <option value="giant">Giant Token</option>
+                <option value="sorcerer">Sorcerer Token</option>
+                <option value="ranger">Ranger Token</option>
+                <option value="troll">Troll Token</option>
+                <option value="vampire">Vampire Token</option>
+                <option value="demon">Demon Token</option>
+            </select>
+          </div>
+      </div>
+
+        <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+             <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style=" margin-right: 4px; font-family: icon-solid;"></span>Eliminar partida</p></a> 
+
+            <button onclick="toggleconfig('modalconfig1')" class="Boton" href=""><p>Hecho</p></button>
+        </div>
+
+
+    </div>
+
+<div  id="modalconfig2" class="modalconfig">
+
+      <div class="rectangle">
+      </div>
+          <input id="imageInput2" style="width: 100%; font-size: 1rem;" type="file" accept="image/png, image/jpeg" />
+
+
+      <div class="frame">
+
+            <div style="margin-top: 16px;" id="titleContainer">
+                <h3 id="cardTitle" class="editable-title">Título de partida</h3>
+
+                <input type="text" id="titleInput" class="title-editor" onblur="saveTitle()" onkeydown="checkEnter(event)" />
+
+                <button id="editButton" class="edit-button" onclick="startEditing('modalconfig2')"></button>
+            </div>
+
+
+        <div class="Contenedorflexvertical">
+
+          <div class="Contenedorflexvertical">
+
+            <h5 class="">Próxima partida:</h5>
+            <input  class="Form" type="date" id="start" name="trip-start" value="2024-08-26" min="2024-08-26" />
+
+            </div>
+            
+          </div>
+
+        <div class="Contenedorflexvertical">
+          <h5 class="">Jugando a:</h5>
+          <select class="Form" name="jugandoa" form="carform">
+
+            <option value="Selecciona-un-sistema-de-juego">Selecciona un sistema de juego</option>
+            <option value="amber-diceless">Amber Diceless</option>
+          <option value="anima-beyond">Anima: Beyond Fantasy</option>
+          <option value="apocalypse-world">Apocalypse World</option>
+          <option value="arcanum">Arcanum</option>
+          <option value="blades-in-the-dark">Blades in the Dark</option>
+          <option value="blood-and-bullets">Blood and Bullets</option>
+          <option value="bugbears-and-broadswords">Bugbears & Broadswords</option>
+          <option value="call-of-cthulhu-7e">Call of Cthulhu 7th Edition</option>
+          <option value="cairn">Cairn</option>
+          <option value="chronicles-of-darkness">Chronicles of Darkness</option>
+          <option value="corIolis">Coriolis: The Third Horizon</option>
+          <option value="cyberpunk-red">Cyberpunk Red</option>
+          <option value="dark-heresy">Dark Heresy</option>
+          <option value="deadlands">Deadlands</option>
+          <option value="delta-green">Delta Green</option>
+          <option value="dnd-5e-dmg">D&D 5E Dungeon Master's Guide</option>
+          <option value="dnd-5e-mm">D&D 5E Monster Manual</option>
+          <option value="dnd-5e-phb">D&D 5E Player's Handbook</option>
+          <option value="eclipse-phase">Eclipse Phase</option>
+          <option value="edge-of-the-sun">Edge of the Sun</option>
+          <option value="fading-suns">Fading Suns</option>
+          <option value="fiasco">Fiasco</option>
+          <option value="gloomhaven">Gloomhaven</option>
+          <option value="johnny-quick">Johnny Quick</option>
+          <option value="karma">Karma</option>
+          <option value="legend-of-the-five-rings">Legend of the Five Rings</option>
+          <option value="lancer">Lancer</option>
+          <option value="midgard">Midgard</option>
+          <option value="masks">Masks: A New Generation</option>
+          <option value="mystery-masters">Mystery Masters</option>
+          <option value="nemesis">Nemesis</option>
+          <option value="numenera">Numenera</option>
+          <option value="overlight">Overlight</option>
+          <option value="paranoia">Paranoia</option>
+          <option value="pathfinder-bestiary">Pathfinder Bestiary</option>
+          <option value="pathfinder-core">Pathfinder Core Rulebook</option>
+          <option value="pbtas">Powered by the Apocalypse</option>
+          <option value="rifts">Rifts</option>
+          <option value="runequest">RuneQuest</option>
+          <option value="savage-worlds">Savage Worlds</option>
+          <option value="shadowrun">Shadowrun</option>
+          <option value="shadowrun-6e">Shadowrun 6th Edition</option>
+          <option value="shadow-of-the-demon-lord">Shadow of the Demon Lord</option>
+          <option value="sprawl-rpg">Sprawl RPG</option>
+          <option value="spire">Spire</option>
+          <option value="stars-without-number">Stars Without Number</option>
+          <option value="star-wars-edge-of-the-empire">Star Wars Edge of the Empire</option>
+          <option value="star-wars-force-and-destiny">Star Wars Force and Destiny</option>
+          <option value="star-wars-rebels">Star Wars Rebels</option>
+          <option value="the-black-hole">The Black Hole</option>
+          <option value="the-expanse">The Expanse</option>
+          <option value="the-one-ring">The One Ring</option>
+          <option value="tales-from-the-loop">Tales from the Loop</option>
+          <option value="tales-of-zale">Tales of Zale</option>
+          <option value="trudvang">Trudvang Chronicles</option>
+          <option value="tunnels-and-trolls">Tunnels & Trolls</option>
+          <option value="unchartered-realms">Uncharted Realms</option>
+          <option value="warhammer-40k-rpg">Warhammer 40K RPG</option>
+          <option value="warhammer-fantasy-rpg">Warhammer Fantasy RPG</option>
+  <option value="witcher-rpg">The Witcher RPG</option>
+  <option value="wonderland">Wonderland</option>
+            </select>
+          </div>
+
+          <div class="Contenedorflexvertical">
+            <h5 class="">Añadidos:</h5>
+          <select class="Form"  name="Añadidos" form="carform">
+                <option value="Selecciona un añadido">Selecciona un añadido</option>
+                  <option value="dynamic-lighting">Dynamic Lighting</option>
+                  <option value="fog-of-war">Fog of War</option>
+                  <option value="grids-and-measurement">Grids and Measurement Tools</option>
+                  <option value="rollable-tables">Rollable Tables</option>
+                  <option value="macros">Macros</option>
+                  <option value="handouts">Handouts</option>
+                  <option value="character-sheets">Character Sheets</option>
+                  <option value="audio-and-music">Audio and Music</option>
+                  <option value="art-assets">Art Assets</option>
+                  <option value="map-making-tools">Map-Making Tools</option>
+                  <option value="tokens">Tokens</option>
+                  <option value="beyond20-integration">Beyond20 Integration</option>
+                  <option value="combat-maps">Combat Maps</option>
+                  <option value="encounter-builder">Encounter Builder</option>
+                  <option value="chat-commands">Chat Commands</option>
+                  <option value="npc-characters">NPC Characters</option>
+                  <option value="scripting-api">Scripting API</option>
+                  <option value="dndbeyond-embed">D&D Beyond Embed</option>
+                  <option value="token-mod">Token Mod</option>
+                  <option value="dice-roller">Dice Roller</option>
+                  <option value="player-management">Player Management</option>
+            </select>
+          </div>
+
+
+
+          <div class="Contenedorflexvertical">
+          <h5 class="">Tokens:</h5>
+          <select class="Form" name="tokens" form="carform">     
+                <option value="selecciona-un-token">Selecciona un token</option>
+                <option value="wizard">Wizard Token</option>
+                <option value="warrior">Warrior Token</option>
+                <option value="archer">Archer Token</option>
+                <option value="cleric">Cleric Token</option>
+                <option value="rogue">Rogue Token</option>
+                <option value="dragon">Dragon Token</option>
+                <option value="goblin">Goblin Token</option>
+                <option value="ogre">Ogre Token</option>
+                <option value="elf">Elf Token</option>
+                <option value="dwarf">Dwarf Token</option>
+                <option value="mage">Mage Token</option>
+                <option value="priest">Priest Token</option>
+                <option value="knight">Knight Token</option>
+                <option value="assassin">Assassin Token</option>
+                <option value="giant">Giant Token</option>
+                <option value="sorcerer">Sorcerer Token</option>
+                <option value="ranger">Ranger Token</option>
+                <option value="troll">Troll Token</option>
+                <option value="vampire">Vampire Token</option>
+                <option value="demon">Demon Token</option>
+            </select>
+          </div>
+      </div>
+
+        <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+             <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style=" margin-right: 4px; font-family: icon-solid;"></span>Eliminar partida</p></a> 
+
+            <button onclick="toggleconfig('modalconfig2')" class="Boton" href=""><p>Hecho</p></button>
+        </div>
+
+
+</div>
+
+<div  id="modalconfig3" class="modalconfig">
+
+      <div class="rectangle">
+      </div>
+          <input id="imageInput3" style="width: 100%; font-size: 1rem;" type="file" accept="image/png, image/jpeg" />
+
+
+      <div class="frame">
+
+            <div style="margin-top: 16px;" id="titleContainer">
+                <h3 id="cardTitle" class="editable-title">Título de partida</h3>
+
+                <input type="text" id="titleInput" class="title-editor" onblur="saveTitle()" onkeydown="checkEnter(event)" />
+
+                <button id="editButton" class="edit-button" onclick="startEditing('modalconfig3')"></button>
+            </div>
+
+
+        <div class="Contenedorflexvertical">
+
+          <div class="Contenedorflexvertical">
+
+            <h5 class="">Próxima partida:</h5>
+            <input  class="Form" type="date" id="start" name="trip-start" value="2024-08-26" min="2024-08-26" />
+
+            </div>
+            
+          </div>
+
+        <div class="Contenedorflexvertical">
+          <h5 class="">Jugando a:</h5>
+          <select class="Form" name="jugandoa" form="carform">
+
+            <option value="Selecciona-un-sistema-de-juego">Selecciona un sistema de juego</option>
+            <option value="amber-diceless">Amber Diceless</option>
+          <option value="anima-beyond">Anima: Beyond Fantasy</option>
+          <option value="apocalypse-world">Apocalypse World</option>
+          <option value="arcanum">Arcanum</option>
+          <option value="blades-in-the-dark">Blades in the Dark</option>
+          <option value="blood-and-bullets">Blood and Bullets</option>
+          <option value="bugbears-and-broadswords">Bugbears & Broadswords</option>
+          <option value="call-of-cthulhu-7e">Call of Cthulhu 7th Edition</option>
+          <option value="cairn">Cairn</option>
+          <option value="chronicles-of-darkness">Chronicles of Darkness</option>
+          <option value="corIolis">Coriolis: The Third Horizon</option>
+          <option value="cyberpunk-red">Cyberpunk Red</option>
+          <option value="dark-heresy">Dark Heresy</option>
+          <option value="deadlands">Deadlands</option>
+          <option value="delta-green">Delta Green</option>
+          <option value="dnd-5e-dmg">D&D 5E Dungeon Master's Guide</option>
+          <option value="dnd-5e-mm">D&D 5E Monster Manual</option>
+          <option value="dnd-5e-phb">D&D 5E Player's Handbook</option>
+          <option value="eclipse-phase">Eclipse Phase</option>
+          <option value="edge-of-the-sun">Edge of the Sun</option>
+          <option value="fading-suns">Fading Suns</option>
+          <option value="fiasco">Fiasco</option>
+          <option value="gloomhaven">Gloomhaven</option>
+          <option value="johnny-quick">Johnny Quick</option>
+          <option value="karma">Karma</option>
+          <option value="legend-of-the-five-rings">Legend of the Five Rings</option>
+          <option value="lancer">Lancer</option>
+          <option value="midgard">Midgard</option>
+          <option value="masks">Masks: A New Generation</option>
+          <option value="mystery-masters">Mystery Masters</option>
+          <option value="nemesis">Nemesis</option>
+          <option value="numenera">Numenera</option>
+          <option value="overlight">Overlight</option>
+          <option value="paranoia">Paranoia</option>
+          <option value="pathfinder-bestiary">Pathfinder Bestiary</option>
+          <option value="pathfinder-core">Pathfinder Core Rulebook</option>
+          <option value="pbtas">Powered by the Apocalypse</option>
+          <option value="rifts">Rifts</option>
+          <option value="runequest">RuneQuest</option>
+          <option value="savage-worlds">Savage Worlds</option>
+          <option value="shadowrun">Shadowrun</option>
+          <option value="shadowrun-6e">Shadowrun 6th Edition</option>
+          <option value="shadow-of-the-demon-lord">Shadow of the Demon Lord</option>
+          <option value="sprawl-rpg">Sprawl RPG</option>
+          <option value="spire">Spire</option>
+          <option value="stars-without-number">Stars Without Number</option>
+          <option value="star-wars-edge-of-the-empire">Star Wars Edge of the Empire</option>
+          <option value="star-wars-force-and-destiny">Star Wars Force and Destiny</option>
+          <option value="star-wars-rebels">Star Wars Rebels</option>
+          <option value="the-black-hole">The Black Hole</option>
+          <option value="the-expanse">The Expanse</option>
+          <option value="the-one-ring">The One Ring</option>
+          <option value="tales-from-the-loop">Tales from the Loop</option>
+          <option value="tales-of-zale">Tales of Zale</option>
+          <option value="trudvang">Trudvang Chronicles</option>
+          <option value="tunnels-and-trolls">Tunnels & Trolls</option>
+          <option value="unchartered-realms">Uncharted Realms</option>
+          <option value="warhammer-40k-rpg">Warhammer 40K RPG</option>
+          <option value="warhammer-fantasy-rpg">Warhammer Fantasy RPG</option>
+  <option value="witcher-rpg">The Witcher RPG</option>
+  <option value="wonderland">Wonderland</option>
+            </select>
+          </div>
+
+          <div class="Contenedorflexvertical">
+            <h5 class="">Añadidos:</h5>
+          <select class="Form"  name="Añadidos" form="carform">
+                <option value="Selecciona un añadido">Selecciona un añadido</option>
+                  <option value="dynamic-lighting">Dynamic Lighting</option>
+                  <option value="fog-of-war">Fog of War</option>
+                  <option value="grids-and-measurement">Grids and Measurement Tools</option>
+                  <option value="rollable-tables">Rollable Tables</option>
+                  <option value="macros">Macros</option>
+                  <option value="handouts">Handouts</option>
+                  <option value="character-sheets">Character Sheets</option>
+                  <option value="audio-and-music">Audio and Music</option>
+                  <option value="art-assets">Art Assets</option>
+                  <option value="map-making-tools">Map-Making Tools</option>
+                  <option value="tokens">Tokens</option>
+                  <option value="beyond20-integration">Beyond20 Integration</option>
+                  <option value="combat-maps">Combat Maps</option>
+                  <option value="encounter-builder">Encounter Builder</option>
+                  <option value="chat-commands">Chat Commands</option>
+                  <option value="npc-characters">NPC Characters</option>
+                  <option value="scripting-api">Scripting API</option>
+                  <option value="dndbeyond-embed">D&D Beyond Embed</option>
+                  <option value="token-mod">Token Mod</option>
+                  <option value="dice-roller">Dice Roller</option>
+                  <option value="player-management">Player Management</option>
+            </select>
+          </div>
+
+
+
+          <div class="Contenedorflexvertical">
+          <h5 class="">Tokens:</h5>
+          <select class="Form" name="tokens" form="carform">     
+                <option value="selecciona-un-token">Selecciona un token</option>
+                <option value="wizard">Wizard Token</option>
+                <option value="warrior">Warrior Token</option>
+                <option value="archer">Archer Token</option>
+                <option value="cleric">Cleric Token</option>
+                <option value="rogue">Rogue Token</option>
+                <option value="dragon">Dragon Token</option>
+                <option value="goblin">Goblin Token</option>
+                <option value="ogre">Ogre Token</option>
+                <option value="elf">Elf Token</option>
+                <option value="dwarf">Dwarf Token</option>
+                <option value="mage">Mage Token</option>
+                <option value="priest">Priest Token</option>
+                <option value="knight">Knight Token</option>
+                <option value="assassin">Assassin Token</option>
+                <option value="giant">Giant Token</option>
+                <option value="sorcerer">Sorcerer Token</option>
+                <option value="ranger">Ranger Token</option>
+                <option value="troll">Troll Token</option>
+                <option value="vampire">Vampire Token</option>
+                <option value="demon">Demon Token</option>
+            </select>
+          </div>
+      </div>
+
+        <div class="" style="margin-top: 16px; float:left; width: 100%; display: flex; align-items: center; justify-content: end; gap: 1vw;">
+             <a class="Boton2"  href=""><p style="font-weight: normal !important;"><span style=" margin-right: 4px; font-family: icon-solid;"></span>Eliminar partida</p></a> 
+
+            <button onclick="toggleconfig('modalconfig3')" class="Boton" href=""><p>Hecho</p></button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+	<script src="JS/script.js"></script>
+</body>
+</html>

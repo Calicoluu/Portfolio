@@ -1,0 +1,381 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 500px){
+
+
+
+
+/*Desaparecen las opciones antiguas*/
+
+#ContenedorMenu {
+    width: 90vw;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#Menu{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    list-style-type: none;
+    float: left;
+
+    display: none;
+
+}
+
+/*Empieza el menu hamburguesa*/
+
+
+
+#Menuhamburguesa{
+	width: 0%;
+	height: 100%;
+
+	background: linear-gradient(#F1F6FF 40vh, transparent);
+	list-style-type: none;
+	display: block;
+
+	z-index: 8;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	transition: 0.75s;
+
+    overflow: hidden;
+}
+
+#iconologo{
+	width: 100%;
+	height: 5vw;
+	display: flex;
+}
+
+#Botonhamburguesa{
+	width: 7vw;
+	height: 7vw;
+	background-color: transparent;
+	border: 0px;
+
+	margin: 1vw 1vw;
+	display: block;
+}
+
+
+.Elemenmenuhamburguesa {
+	width: auto;
+	height: 50px;
+	text-align: left;
+	line-height: 40px;
+	margin-left: 5vw;
+
+
+}
+
+.Elemenmenuhamburguesa a {
+    font-family: Sims;
+    font-size: calc(0.7rem + 1vw );
+    color: #fff;
+    text-shadow: 2px 0 #70C0F1, -2px 0 #70C0F1, 0 2px #70C0F1, 0 -2px #70C0F1,
+               1px 1px #70C0F1, -1px -1px #70C0F1, 1px -1px #70C0F1, -1px 1px #70C0F1;
+
+    text-decoration: none;
+}
+
+
+/*ACABA EL MENU*/
+#hero {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#contenedoranuncio {
+    width: 100%;
+    height: 10vw;
+    min-height: 20px;
+    margin-bottom: 3vw;
+
+    background-color: #DAEFFB;
+    box-shadow: 1px 9px 28px rgba(89, 110, 123, 0.36) inset; 
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+#Anuncio {
+    height: auto;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: -1200px;
+    transform: translate(0, -50%);
+    z-index: 1;
+
+    animation-name: MovimientoTexto;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+}
+
+#anunciotexto {
+    font-family: Sims;
+    font-size: calc(0.5rem + 1vw );
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(89, 110, 123, 0.36);
+
+}
+
+
+/*introduccion*/
+
+#introduccion {
+    width: 80vw ;
+    height: auto;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 7vw;
+
+}
+
+.introducciontexto {
+    font-family: Sims;
+    font-size: calc(0.5rem + 1vw );
+    color: #98D8FF;
+    text-align: center;
+}
+
+/*Rondas*/
+
+#contenedorrondas {
+    width: 100%;
+    height: auto;
+    margin-bottom: 7vw;
+}
+
+.textorondas {
+    font-family: Sims;
+    font-size: calc(0.8rem + 1vw );
+    color: #fff;
+    text-align: center;
+    line-height: 15vw;
+}
+
+#ronda1 {
+    width: 100%;
+    height: 15vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+#ronda2 {
+    width: 100%;
+    height: 15vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+
+#ronda3 {
+    width: 100%;
+    height: 15vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+
+
+/*Simmers*/
+
+#seccsimmers {
+    width: 95vw;
+    height: auto;
+    margin-top: 1vw;
+
+    padding-bottom: 2vw;
+}
+
+.TituloGrande {
+    font-family: Sims;
+    font-size: calc(1rem + 2.5vw );
+    text-align: center;
+    color: #70C0F1; 
+}
+
+#contenedorsimmers {
+	width: 100%;
+    height: auto;
+    padding-top: 2vw;
+
+ 	overflow-x: scroll;
+ 	display: flex;
+}
+
+.simmers {
+    width: 35vw;
+    height: 47,6%;
+    margin: 0.5vw;
+
+    overflow: hidden;
+    float: left;
+
+
+    border-radius: 3vw;
+    position: relative;
+}
+
+
+
+.Titulosimmer {
+    font-family: Sims;
+    font-size: calc(0.5rem + 0.9vw );
+    color: #fff;
+    text-shadow: 2px 0 #70C0F1, -2px 0 #70C0F1, 0 2px #70C0F1, 0 -2px #70C0F1,
+               1px 1px #70C0F1, -1px -1px #70C0F1, 1px -1px #70C0F1, -1px 1px #70C0F1;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    transition: 0.4s;
+
+}
+
+.simmers:hover .Titulosimmer {
+
+    font-family: Sims;
+    font-size: calc(0.5rem + 0.9vw );
+    color: #fff;
+    text-shadow: 2px 0 #70C0F1, -2px 0 #70C0F1, 0 2px #70C0F1, 0 -2px #70C0F1,
+               1px 1px #70C0F1, -1px -1px #70C0F1, 1px -1px #70C0F1, -1px 1px #70C0F1;
+
+    position: absolute;
+    z-index: 2;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.Subtitulosimmer {
+    font-family: Sims;
+    font-size: calc(0.4rem + 0.5vw );
+    text-align: center;
+    color: #70C0F1;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+
+    position: absolute;
+    z-index: 3;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    transition: 0.4s;
+
+}
+
+.simmers:hover .Subtitulosimmer {
+
+    font-family: Sims;
+    font-size: calc(0.4rem + 0.5vw );
+    text-align: center;
+    color: #70C0F1;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+
+    position: absolute;
+    z-index: 3;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+/*Footer*/
+
+#Contenedorconfig {
+    width: 85%;
+    height: auto;
+
+    padding-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vw;
+
+    text-align: center;
+
+}
+
+.Textolinks {
+    font-family: Sims;
+    font-size: calc(0.2rem + 0.7vw );
+    text-align: center;
+    color: #fff; 
+    margin-left: 0.5vw;
+    text-decoration: none;
+}
+
+.Textolinks:hover {
+    
+    font-family: Sims;
+    font-size: calc(0.2rem + 0.7vw );
+    text-align: center;
+    color: #fff; 
+    margin-left: 0.5vw;
+
+    border-bottom: solid 0.1vw;
+}
+
+#ContenedorLogos {
+    width: 85%;
+    height: 10vw;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-top: 1vw;
+    border-top: 0.2vw solid #fff;
+}
+
+.LogosEA1 {
+    height: 100%;
+    width: auto;
+    float: left;
+}
+
+.LogosEA2 {
+    height: 100%;
+    width: auto;
+
+    float: right;
+}
+
+}
